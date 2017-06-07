@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-lg-12">
+      <form [formGroup]="carForm" (ngSubmit)="addCar(carForm.value)" autocomplete="off" novalidate>
+        <legend><i class="fa fa-car" aria-hidden="true"></i> Add Car</legend>
+      
+        <div class="form-group">
+          <label>Car Name</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-info" aria-hidden="true"></i></span>
+            <input formControlName="name" class="form-control" placeholder="Name">
+          </div>
+          <div *ngIf="carForm.controls.name.errors && (carForm.controls.name.dirty || carForm.controls.name.touched)"
+                  class="alert alert-danger">
+                  <div [hidden]="!carForm.controls.name.errors.required">This field is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Car Model</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-info" aria-hidden="true"></i></span>
+            <input formControlName="model" class="form-control" placeholder="Model">
+          </div>
+          <div *ngIf="carForm.controls.model.errors && (carForm.controls.model.dirty || carForm.controls.model.touched)"
+                  class="alert alert-danger">
+                  <div [hidden]="!carForm.controls.model.errors.required">This field is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Car Brand</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-info" aria-hidden="true"></i></span>
+            <input formControlName="brand" class="form-control" placeholder="Brand">
+          </div>
+          <div *ngIf="carForm.controls.brand.errors && (carForm.controls.brand.dirty || carForm.controls.brand.touched)"
+                  class="alert alert-danger">
+                  <div [hidden]="!carForm.controls.brand.errors.required">This field is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="car_desc">Car Description</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-info" aria-hidden="true"></i></span>
+            <input formControlName="description" class="form-control" placeholder="Description">
+          </div>
+          <div *ngIf="carForm.controls.description.errors && (carForm.controls.description.dirty || carForm.controls.description.touched)"
+                  class="alert alert-danger">
+                  <div [hidden]="!carForm.controls.description.errors.required">This field is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="car_price">Car Price</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-money" aria-hidden="true"></i></span>
+            <input formControlName="price" class="form-control" placeholder="Price">
+          </div>
+          <div *ngIf="carForm.controls.price.errors && (carForm.controls.price.dirty || carForm.controls.price.touched)"
+                  class="alert alert-danger">
+                  <div [hidden]="!carForm.controls.price.errors.required">This field is required!</div>
+                  <div [hidden]="!carForm.controls.price.errors.pattern">This field accepts numbers only!</div>
+            </div>
+        </div>
+      
+        <button type="submit" class="btn btn-primary pull-right" [disabled]="!carForm.valid">Submit</button>
+      </form>
+    </div>
+
+  </div>
+</div>

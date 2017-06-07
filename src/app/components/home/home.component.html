@@ -1,0 +1,270 @@
+<div id="sec-1" class="container-fluid">
+  <div class="row carousel-row slide-row">
+
+        <div class="carousel slide slide-carousel" id="carousel-1" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/header-huracan-performante.jpg"
+                   class="img-main img-responsive" alt="Image">
+
+              <div class="container">
+                <div class="row">
+                  <div class="img-text-box col-sm-3 col-sm-offset-8">
+                    <h2 class="img-text"> Lamborghini <br/> Huracan Performante </h2>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="item">
+              <img src="http://assets.bugatti.com/fileadmin/user_upload/Web/Pages/Models/Super_Sport/BUG_super_sport_02.jpg"
+                   class="img-main img-responsive" alt="Image">
+
+              <div class="container">
+                <div class="row">
+                  <div class="img-text-box col-sm-3 col-sm-offset-8">
+                    <h2 class="img-text"> Buggati <br/> Veyron 16.4 </h2>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="item">
+              <img src="https://squir.com/47477/ferrari-laferrari-aperta-2017.jpg"
+                   class="img-main img-responsive" alt="Image">
+
+              <div class="container">
+                <div class="row">
+                  <div class="img-text-box col-sm-3 col-sm-offset-8">
+                    <h2 class="img-text"> Ferarri <br/> LaFerrari Aperta </h2>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div id="sec-2" class="container-fluid">
+  <div class="container">
+
+    <h1 class="text-center">Super Cars for Everyone!</h1>
+    <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur debitis illum iste obcaecati quos reprehenderit?</p>
+    <br>
+
+      <!-- TAB NAVIGATION -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#tab1" role="tab" data-toggle="tab">Lamborghini</a></li>
+        <li><a href="#tab2" role="tab" data-toggle="tab">Bugatti</a></li>
+        <li><a href="#tab3" role="tab" data-toggle="tab">Ferrari</a></li>
+      </ul>
+      <!-- TAB CONTENT -->
+      <div class="tab-content">
+        <div class="active tab-pane fade in" id="tab1">
+          <h2>Lamborghini</h2>
+            <div *ngFor="let car of cars" class="col-lg-4 col-md-6 col-xs-12 thumb">
+              <div class="pnl-main panel panel-default">
+                <div class="pnl-heading panel-heading">
+                  <h4 class="panel-title">{{car.name}}</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="container-fluid">
+                    <a class="thumbnail" href="#">
+                      <img class="img-responsive" src="http://assets.bugatti.com/fileadmin/user_upload/Web/Pages/Models/Super_Sport/BUG_super_sport_02.jpg" alt="">
+                    </a>
+                  </div>
+                  <p>{{car.description}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tab2">
+          <h2>Bugatti</h2>
+            <div *ngFor="let car of cars" class="col-lg-4 col-md-6 col-xs-12 thumb">
+              <div class="pnl-main panel panel-default">
+                <div class="pnl-heading panel-heading">
+                  <h4 class="panel-title">{{car.name}}</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="container-fluid">
+                    <a class="thumbnail" href="#">
+                      <img class="img-responsive" src="http://assets.bugatti.com/fileadmin/user_upload/Web/Pages/Models/Super_Sport/BUG_super_sport_02.jpg" alt="">
+                    </a>
+                  </div>
+                  <p>{{car.description}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tab3">
+          <h2>Ferrari</h2>
+          <div *ngFor="let car of cars" class="col-lg-4 col-md-6 col-xs-12 thumb">
+            <div class="pnl-main panel panel-default">
+              <div class="pnl-heading panel-heading">
+                <h4 class="panel-title">{{car.name}}</h4>
+              </div>
+              <div class="panel-body">
+                <div class="container-fluid">
+                  <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://assets.bugatti.com/fileadmin/user_upload/Web/Pages/Models/Super_Sport/BUG_super_sport_02.jpg" alt="">
+                  </a>
+                </div>
+                <p>{{car.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div id="sec-3" class="container-fluid">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+            <h1 class="fa-icon-hdr">Cogs</h1><br>
+            <i class="fa-icon fa fa-cogs" aria-hidden="true"></i><hr>
+            <p class="fa-icon-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur dolore neque, sed totam
+              vitae.</p><br>
+            <ul class="list-group">
+              <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+              <li class="list-group-item">Maxime nulla sequi tenetur veniam?</li>
+              <li class="list-group-item">Accusantium enim mollitia nihil quidem.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+            <h1 class="fa-icon-hdr">Car</h1><br>
+            <i class="fa-icon fa fa-car" aria-hidden="true"></i><hr>
+            <p class="fa-icon-desc">Aspernatur consequatur exercitationem magnam minus neque vero! Ab, beatae cupiditate facilis iure.</p><br>
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+            <h1 class="fa-icon-hdr">Card</h1><br>
+            <i class="fa-icon fa fa-id-card-o" aria-hidden="true"></i><hr>
+            <p class="fa-icon-desc">Excepturi, molestias, omnis. Cum ducimus fugit molestias vel voluptatem? Exercitationem facere illo.</p><br>
+            <ul class="list-group">
+              <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+              <li class="list-group-item">Adipisci asperiores iusto laborum reiciendis.</li>
+              <li class="list-group-item">Eius error eveniet numquam soluta.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="sec-4" class="container-fluid">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon">Find your super car!</span>
+            <input type="text" name="email" id="email" class="form-control" placeholder="Email" required>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Submit</button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="sec-5" class="container-fluid">
+  <div class="container text-center">
+    <div class="row">
+
+      <div class="col-lg-12">
+        <h1>Customer Testimonials</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis tempore culpa, maiores, officiis officia omnis.</p>
+        <hr><br><br>
+      </div>
+
+      <div class="col-lg-4">
+        <img src="http://cs.pikabu.ru/images/big_size_comm/2013-10_3/13814817295690.jpg" alt="memes" class="img-testimonial img-circle"><br><br>
+        <blockquote class="blockquote">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dolor.</p>
+          <small class="pull-right">Peter Parker</small>
+        </blockquote>
+      </div>
+      <div class="col-lg-4">
+        <img src="https://i.warosu.org/data/lit/img/0083/49/1470104262394.jpg" alt="memes" class="img-testimonial img-circle"><br><br>
+        <blockquote class="blockquote">
+          <p>Autem omnis, quod sint quisquam. Inventore, reiciendis. Molestias, aspernatur, eligendi!</p>
+          <small class="pull-right">John Doe</small>
+        </blockquote>
+      </div>
+      <div class="col-lg-4">
+        <img src="http://www.drodd.com/images11/meme-faces8.png" alt="memes" class="img-testimonial img-circle"><br><br>
+        <blockquote class="blockquote">
+          <p>Neque labore veritatis doloribus totam at, perspiciatis inventore saepe perferendis.</p>
+          <small class="pull-right">Dr. Odd</small>
+        </blockquote>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="sec-6" class="container-fluid">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-4">
+       <h1>Contact Us</h1>
+       <p><i class="fa fa-phone" aria-hidden="true"></i> (651) 426-1326</p>
+       <p><i class="fa fa-envelope" aria-hidden="true"></i> support@mean-car.com</p>
+       <p><i class="fa fa-map-marker" aria-hidden="true"></i> 666 Dimagiba St. Quezon City, PH</p>
+     </div>
+     <div class="col-lg-4">
+       <h1>About Us</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi unde minima id porro nemo culpa sapiente. Enim excepturi, ex iure blanditiis sapiente delectus dicta, dolorum eligendi nulla rem similique dolores asperiores totam sit eum? Pariatur facere vel rerum soluta, natus, commodi eius quia modi dicta minus provident eaque quas?</p>
+     </div>
+     <div class="col-lg-4">
+       <h1>Newsletter</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, harum!</p>
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" name="email" id="email" class="form-control" placeholder="Email" required>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Sign Up</button>
+            </span>
+          </div>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
